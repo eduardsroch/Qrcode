@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Gerador de QR Code</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="container">
+    <input type="text" id="inputLink" placeholder="Insira o link aqui">
+    <button onclick="generateQR()">Gerar QR Code</button>
+    <div id="qrcode"></div>
+    <button onclick="downloadImage()">Exportar como Imagem</button>
+    <button onclick="downloadPDF()">Exportar como PDF</button>
+  </div>
+
+  <footer>
+    Gerador de QR Code
+  </footer>
+
+  <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
